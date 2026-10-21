@@ -1,0 +1,8 @@
+node_modules
+artifacts
+cache
+typechain-types
+coverage
+.env
+frontend/node_modules
+frontend/dist

@@ -1,0 +1,28 @@
+{
+  "name": "labledger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LabLedger - Accountable Lab Equipment Access (Solidity + Hardhat + React)",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.ts --network localhost",
+    "seed": "hardhat run scripts/seed.ts --network localhost",
+    "advance-time": "hardhat run scripts/advance-time.ts --network localhost",
+    "demo": "hardhat run scripts/deploy.ts --network localhost && hardhat run scripts/seed.ts --network localhost",
+    "frontend:install": "npm --prefix frontend install",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "5.0.0",
+    "@openzeppelin/contracts": "5.7.0",
+    "dotenv": "16.4.7",
+    "ethers": "6.17.0",
+    "hardhat": "2.29.1",
+    "solc": "0.8.28",
+    "ts-node": "10.9.2",
+    "typescript": "5.9.3"
+  }
+}
